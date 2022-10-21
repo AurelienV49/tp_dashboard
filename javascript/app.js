@@ -165,8 +165,7 @@ var tableauMarqueurs = [];
 var lieuxActif;
 
 class LeafletMap {
-    var map;
-    
+
     constructor() {
         this.map = $map;
     }
