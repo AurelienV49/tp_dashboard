@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Aurélien VAILLANT" />
+    <meta name="keyword" content="cours html, balise meta, formulaires, listes, tableaux, cadres" />
+    <title>OpenStreetMap</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css" integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=" crossorigin="" />
+    <link rel="stylesheet" href="style_css/style.css" />
+</head>
+
+<body onload="initMap()">
+    <div id="home">
+        <div id="home_left">
+            <div id="home_left_header">
+                <div id="home_left_header_logo">
+                    <img src="./images/picto_ynov_informatique_code.svg" alt="Logo du site" height="100%" width="100%" />
+                </div>
+                <div id="home_left_header_nom_logo">
+                    <h5>OpenStreetMap</h5>
+                </div>
+            </div>
+            <div id="user">
+                <div id="picture">
+                    <img src="./images/avatar.png" alt="Logo du site" />
+                </div>
+                <div id="name">
+                    <div id="welcome">
+                        <p id="welcome_2">Welcome</p>
+                    </div>
+                    <div id="pseudo">
+                        <p id="pseudo_2">demo</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="home_right">
+            <span>
+          <h1>OpenStreetMaps - leaftlet</h1>
+          <!-- Example single danger button -->
+          <div class="btn-group">
+            <button
+              type="button"
+              class="btn btn-danger dropdown-toggle"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Choix du lieu
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Place Ynov</a>
+              <a class="dropdown-item" href="#">Place </a>
+              <a class="dropdown-item" href="#">Something else here</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Separated link</a>
+            </div>
+          </div>
+        </span>
+            <hr />
+            <div class="container"></div>
+            <div class="map" id="map">du texte</div>
+        </div>
+    </div>
+
+    <noscript> Désolé, ..., Javascript n'est pas activé !!! </noscript>
+
+    <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js" integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg=" crossorigin=""></script>
+
+    <script src="javascript/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,114 @@
+/* CSS global */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #000;
+}
+
+body {
+    background: #585c68;
+    font-size: 14px;
+    line-height: 22px;
+    color: #555555;
+}
+
+#home {
+    width: 1100px;
+    height: auto;
+    display: flex;
+    margin: 50px auto;
+}
+
+
+/* left */
+
+#home #home_left {
+    width: 300px;
+    background: #404C63;
+}
+
+#home #home_left #home_left_header {
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+    margin: 5px;
+}
+
+#home #home_left #home_left_header #home_left_header_logo {
+    width: 100px;
+    display: flex;
+    align-items: center;
+}
+
+#home #home_left #home_left_header #home_left_header_nom_logo {
+    width: 200px;
+    display: flex;
+    align-items: center;
+}
+
+#home #home_left #user {
+    display: flex;
+    gap: 10px;
+    margin: 5px;
+}
+
+#home #home_left #user #picture {
+    width: 100px;
+    flex-grow: 4;
+}
+
+#home #home_left #user #name {
+    width: 100px;
+    flex-grow: 4;
+}
+
+#home #home_left #user #name #welcome p#welcome_2 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 6em;
+    color: white;
+}
+
+#home #home_left #user #name #pseudo p#pseudo_2 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 6em;
+    color: white;
+}
+
+
+/* right */
+
+#home #home_right {
+    width: 800px;
+    height: auto;
+    background: #fff;
+    padding: 25px;
+}
+
+
+/* CSS de la map */
+
+@media only screen and (min-width: 400px) {
+    .container {
+        display: grid;
+        grid-template-columns: 4fr 7fr;
+        color: antiquewhite;
+    }
+    /* CSS de la map */
+    .item {
+        cursor: pointer;
+    }
+    #map {
+        height: 80vh;
+        top: 0px;
+        right: 0px;
+        left: 0px;
+        background-color: #CCCCCC;
+        position: sticky;
+    }
+}
