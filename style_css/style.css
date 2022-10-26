@@ -54,16 +54,22 @@ body {
     display: flex;
     gap: 10px;
     margin: 5px;
+    justify-content: space-around;
 }
 
 #home #home_left #user #picture {
     width: 100px;
     flex-grow: 4;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
 }
 
 #home #home_left #user #name {
-    width: 100px;
-    flex-grow: 4;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #home #home_left #user #name #welcome p#welcome_2 {
@@ -81,13 +87,117 @@ body {
 }
 
 
+/*---------------------------*/
+
+.resume_work .title {
+    margin-left: 40px;
+    margin-top: 20px;
+}
+
+#home #home_left .bold {
+    color: white;
+}
+
+#home #home_left .resume_work ul {
+    padding-left: 40px;
+    overflow: hidden;
+    margin-left: 20px;
+}
+
+#home #home_left ul li {
+    position: relative;
+}
+
+#home #home_left ul li .date {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    color: white;
+}
+
+#home #home_left ul li .info {
+    margin-bottom: 20px;
+    color: white;
+}
+
+#home #home_left ul li:last-child .info {
+    margin-bottom: 0;
+}
+
+
+/*ronds*/
+
+#home #home_left .resume_work ul li:before {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: -17px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+
+/* barres verticales*/
+
+#home #home_left .resume_work ul li:after {
+    content: "";
+    position: absolute;
+    top: 14px;
+    left: -15px;
+    width: 2px;
+    height: 110px;
+    background: white;
+}
+
+
+/*---------------------------*/
+
+#home #home_left ul li .icon {
+    width: 35px;
+    height: 35px;
+    background: rgb(255, 255, 255);
+    color: #1ad114;
+    border-radius: 50%;
+    margin-right: 15px;
+    font-size: 16px;
+    position: relative;
+}
+
+#home .icon i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/*++++++++++++++++++++++++++++*/
+
+
 /* right */
 
 #home #home_right {
     width: 800px;
     height: auto;
-    background: #fff;
+    background: rgb(230, 224, 224);
     padding: 25px;
+}
+
+#home #home_right #header {
+    display: flex;
+}
+
+#home #home_right #header #title {
+    flex: 5;
+}
+
+#home #home_right #header #choixUser {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 
@@ -112,3 +222,6 @@ body {
         position: sticky;
     }
 }
+
+
+/*essais  */
